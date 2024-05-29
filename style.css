@@ -1,0 +1,721 @@
+*{
+    margin: 0 ;
+    padding: 0 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    box-shadow: 0px 0px 30px 0;
+    z-index: 99;
+    background-color: white;
+    margin-left: -3px;
+}
+
+header img{
+    width: 50px;
+}
+
+header .nav-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-links ul li{
+   list-style-type: none;
+}
+
+header ul li a{  
+    display: block;  
+    color: black; 
+    font-size: 10px;  
+    /* padding: 8px 5px;    */
+    text-decoration: none;
+    overflow: hidden;
+} 
+
+header ul li a:hover{
+    color: red;
+}
+
+header button{
+    background-color: rgb(220, 48, 48);
+    padding: 5px 4px;
+    border: none;
+    font-size: 9px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.mid{
+    padding-top: 100px;
+}
+
+.mid .first{
+    text-align: center;
+}
+
+.mid .first h1{
+    font-weight: 400;
+    text-align: center;
+}
+
+.mid .first p{
+    padding: 30px 20px 0;
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+.mid .first .images{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.mid .first .images .one{
+    padding: 30px 0;
+}
+
+.mid .first .images .one img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mid .first .images .one h2{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.mid .first .images .one h3{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.mid .first .images .one h4{
+    padding: 15px 0;
+    color: #aba9a9;
+    text-align: left;
+}
+
+.mid .first .images .one h2:hover{
+    color: red;
+}
+
+.mid .first .images .one h4:hover{
+    color: red;
+}
+
+.place{
+    text-align: center;
+    width: 100%;
+    background: url(img/4.webp) no-repeat center/cover;
+    height: 300px;
+    text-align: center;
+    padding: 150px 0 50px; 
+    opacity: 10;
+}
+
+.place p{
+    font-size: 25px;
+    color: red;
+}
+
+.place h2{
+    font-size: 30px;
+    padding: 40px 0;
+}
+
+.place button{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: red;
+    background-color: whitesmoke;
+    border: 1px;
+}
+
+.latest {
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.latest .news h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.latest .news p{
+    padding: 30px 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.latest .news .boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.latest .news .boxes .box{
+    position: relative;
+}
+
+.latest .news .boxes .box img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.latest .news .boxes .box .date{
+    position: absolute;
+    background-color: white;
+    color: black; 
+    bottom: 48%;  
+    left: 6%;
+    text-wrap: wrap;
+    border: 1px solid rgb(231, 228, 228)
+}
+
+.latest .news .boxes .box .date p{
+    padding: 6px 12px;
+    font-size: 20px;
+}
+
+.latest .news .boxes .box .date:hover{
+    bottom: 52%;
+    background-color: red;
+    color: white;
+    transition: .5s ease-in;
+}
+
+.latest .news .boxes .box .icons {
+    color: #666666;
+    padding-top: 40px;
+}
+
+.latest .news .boxes .box .icons i{
+    padding-right: 5px;
+}
+
+.latest .news .boxes .box hr{
+    border: .1px solid #e1e1e1;
+}
+
+.latest .news .boxes .box .text{
+    padding: 20px 0 50px;
+    text-align: center;
+}
+
+.latest .news .boxes .box .text h5{
+    font-weight: 400;
+    font-size: 15px;
+    color: #aba9a9;
+    line-height: 2;
+}
+
+.latest .news .boxes .box h5 i{
+    padding-right: 7px;
+    color: red;
+}
+
+.latest .news .boxes .box h5 em{
+    color: #666666;
+}
+
+.eve{
+    color: white;
+    background: url(img/event\ 2.webp) no-repeat center/cover;
+    height: 150px;
+    text-align: left;
+    padding: 80px 20px 50px; 
+    margin-bottom: 50px;
+}
+
+.eve p{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.gal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.gal .part{
+    position: relative;
+}
+
+.gal .part img{
+    opacity: 1;
+    width: 100%;
+    transition: .5s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.gal .part .pop{
+    transition: .5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    text-align: center;
+}
+
+.gal .part .pop i{
+    font-size: 40px;
+}
+
+.gal .part:hover img{
+    opacity: 0.3;
+} 
+
+.gal .part:hover .pop{
+    opacity: 0.3;
+}
+
+.latest .boxes .box h2{
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 23px;
+} 
+
+.latest .boxes .box pre{
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+
+.latest .boxes .box pre a{
+    color: black;
+    text-decoration: none;
+}
+
+.latest .boxes .box pre i{
+    color: red;
+}
+
+.latest .boxes .box h2:hover{
+    color: red;
+}
+
+.latest .boxes .box pre :hover{
+    color: red;
+} 
+
+footer .top{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(173, 28, 28);
+    height: 120px;
+}
+
+footer .top .sub .text{
+    color: white;
+}
+
+footer .top .sub .text h2{
+    font-size: 20px;
+}
+
+footer .top .sub .text p{
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+footer .top .sub .mail form{
+    position: absolute;
+    width: 90%;
+}
+
+footer .top .sub .mail form input{
+    font-size: 16px;
+    height: 40px;
+    width: 90%;
+    border: 1px solid #e1e1e1;
+    text-indent: 20px;
+    color: #666666;
+}
+
+footer .top .sub .mail form button{
+    position: relative;
+    bottom: 40px;
+    left: 95px;
+    height: 35px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(173, 28, 28);
+    font-weight: 100;
+    border: none;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    margin: 2px 1px 3px 0;
+}
+
+footer .bottom{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    column-gap: 30px;
+    background-color: rgb(39, 12, 12);
+    color: #aba9a9
+}
+
+footer .bottom .link{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer .bottom .link img{
+    width: 150px;
+}
+
+footer .bottom .link p{
+    padding-top: 30px;
+    text-align: justify; 
+}
+
+footer .bottom .link h3{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 40px 0 20px;
+    color: white;
+}
+
+footer .bottom .link h4:hover{
+    color: red;
+}
+
+footer .bottom .link .quick{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    column-gap: 10%;
+    width: 100%;
+}
+
+footer .bottom .link .quick .one{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .bottom .link .quick .one:hover{
+    color: red;
+}
+
+footer .bottom .link span{
+    padding-bottom: 15px;
+}
+
+footer .bottom .link span i{
+    padding-right: 5px;
+    color: red;
+}
+
+footer .bottom .link .quick .one span a{
+    color: #aba9a9;
+    text-decoration: none;
+    
+}
+
+footer .bottom .link .quick .one span :hover{
+    color: red;
+}
+
+/* EVENTS */
+
+.msg form{
+    padding: 100px 10px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.msg form .fill{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.msg .fill label{
+ display: flex;
+ flex-direction: row;
+ font-size: 20px;
+}
+
+.msg .fill input{
+    font-size: 17px;
+    height: 30px;
+    text-indent: 10px;
+}
+
+.msg form button{
+    padding: 8px 12px;
+    margin-top: 20px;
+    background-color: rgb(166, 26, 26);
+    color: white;
+    border: none;
+}
+
+.msg form button:hover{
+    background-color: rgb(20, 20, 36);
+}
+
+.events{
+    padding: 0px 10px;
+}
+
+.events h2{
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.events .march{
+    display: flex;
+    flex-direction: column;
+}
+
+.events .march img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.events .march .note h3{
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.events .march .note .icon{
+    padding: 20px 0;
+}
+
+.events .march .note .icon a{
+    color: black;
+    text-decoration: none;
+}
+
+.events .march .note .icon i{
+    padding-right: 5px;
+    color: red;
+}
+
+.events .march .note .icon em{
+    padding-right: 15px;
+}
+
+.events .march .note h4{
+    padding-top: 20px;
+}
+
+.events .march button{
+    height: 20%;
+    margin: 40px 0;
+    padding: 8px 16px;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0 10px 0;
+    cursor: pointer;
+    color: red;
+}
+
+.events .march button :hover{
+    background-color: red;
+    color: white;
+}
+
+.page{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.page span{
+    margin-right: 10px;
+    color: black;
+    padding: 8px 12px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.page span:hover{
+    background-color: red;
+    color: white;
+}
+
+/* SERMONS */
+
+.begin{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: inherit;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.begin .living img{
+    width: 100%;
+}
+
+.begin .living .way{
+    position: relative;
+    background-color: white;
+    color: black; 
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0 7%;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 10px 0;
+}
+
+
+/* CONTACT */
+
+.area{
+    padding: 100px 0px;
+}
+
+.area .con{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.msg{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.msg h1{
+    font-size: 30px;
+}
+
+.msg .fill textarea{
+    font-size: 17px;
+    height: 200px;
+    text-indent: 10px;
+}
+
+
+/* BLOG */
+
+.cat{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.cat h2{
+    padding: 15px 0;
+    font-weight: 600;
+}
+
+.cat span{
+ font-size: 18px;
+ line-height: 2;
+ color: black;
+}
+
+.cat span :hover{
+    color: red;
+}
+
+.cat span a{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+}
+
+.down{
+    padding: 20px;
+}
+
+.down h2{
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.down .recent h4{
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.down .recent h5{
+    padding: 10px 0;
+    color: #aba9a9;
+    font-weight: 600;
+}
+
+.down h3{
+    line-height: 2;
+    font-weight: 400;
+}
+
+.tag{
+    padding: 20px;
+}
+
+.tags{
+    padding: 0 20px 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.tags button{
+    padding: 5px 10px;
+    letter-spacing: 3px;
+    background-color: white;
+    border: .1px solid #aba9a9;
+}
+
+.tags button:hover{
+    background-color: red;
+    color: white;
+}
+
+footer .scroll{
+    position: relative;
+}
+
+footer .scroll a{
+    position: absolute;
+    right: 10%;
+    bottom: 30px;
+    background-color: red;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
